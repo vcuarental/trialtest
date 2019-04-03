@@ -1,0 +1,1 @@
+  user u = [SELECT ID from User WHERE username = {!Environment.ADMIN_USER}]; permissionSet ps = [select id, name from permissionSet where name = 'Trail_permission_Set']; PermissionSetAssignment psa = new PermissionSetAssignment (PermissionSetId = ps.id, AssigneeId = U.Id); insert psa;
